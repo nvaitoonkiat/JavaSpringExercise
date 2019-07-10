@@ -15,6 +15,7 @@ public class SportConfig {
     public Coach swimCoach(){
         return new SwimCoach(testFortuneService()); //dependency injection
     }
+    //define Bean
     @Bean
     public TestFortuneService testFortuneService(){
         return new TestFortuneService();
