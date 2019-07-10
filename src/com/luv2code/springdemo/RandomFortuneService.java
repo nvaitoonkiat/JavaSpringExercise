@@ -18,4 +18,8 @@ public class RandomFortuneService implements FortuneService {
     public String getFortune() {
         return "Random fortune " +  data[rand.nextInt(data.length)];
     }
+
+    public String[] getData() {
+        return data;
+    }
 }
